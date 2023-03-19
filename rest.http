@@ -1,0 +1,41 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzg3Njk5ODMsImV4cCI6MTY3ODc3MzU4MywiYXVkIjoiNjQwZWE2YjQ3MGMwN2E2YmUwNGM2ODEwIiwiaXNzIjoidGhpbmdzLmNvbSJ9.rE7yYoRUYg00ac9_yPBDBR2aizh4BdAT9chV8otVAc4
+
+####
+
+
+####
+#login Router
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "mas@gmail.com",
+    "password": "123456"
+}
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "akshay@gmail.com",
+    "password": "123456"
+}
+
+####
+POST http://localhost:3000/auth/refresh-token HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{
+     "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzg4MTE2NTcsImV4cCI6MTcxMDM2OTI1NywiYXVkIjoiNjQxMGEyMDkzMDVmMTdiY2RmMzM4ZWZhIiwiaXNzIjoidGhpbmdzLmNvbSJ9.v6lDhBxfy9ovVWajwe17gmPaE0x4dHo02fBkJbu17GU" }
