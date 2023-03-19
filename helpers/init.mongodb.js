@@ -2,10 +2,7 @@ const mongoose = require('mongoose')
 
 mongoose.connect (process.env.MONGODB_URI,{
     dbName:process.env.DB_NAME,
-    // useNewUrlparser: true,
-    // userUnifiedTopology:true,
-    // userFindAndModify:false,
-    // userCreateIndex:true
+  
 }).then(() =>{
     console.log("mongodb created")
 }).catch((err)=>

@@ -8,7 +8,7 @@ const { verifyAccessToken } = require('./helpers/jwt_helper')
 
 const app = express()
 app.use(morgan('dev'))
-app.use(express.json()) //Printing the logs in the console terminal of req.body
+app.use(express.json()) 
 app.use(express.urlencoded({extended:true}))
 
 const PORT  = process.env.PORT || 1000
@@ -22,16 +22,11 @@ app.use('/auth', AuthRoute)
 
 
 app.use(async (req,res,next) =>{
-    // const error = new Error("Not found");
-    // error.status=404;
-    // next(error);
+   
     next(createError.NotFound("this route does not exit"));
 })
 
-//next(error);
-// whenever you call the above the 'next' method it will call the beloq method.
 
-//Error Handling: contains 4 parameters.
 app.use((err,req,res,next) =>{
     res.status(err.status || 500)
     res.send({

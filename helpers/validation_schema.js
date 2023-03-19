@@ -7,8 +7,7 @@ const authSchema = Joi.object({
 })
 
 
-//while exporting we are using the object. Here it is auth
-//Schema but In future there are multiple schema are there.
+
 module.exports= {
     authSchema
 }
