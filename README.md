@@ -21,7 +21,7 @@ To run the project on your local machine, you will need Node.js installed. Once 
 # Login API
 <img width="940" alt="loginRouter" src="https://user-images.githubusercontent.com/62823252/226517017-880f9360-3e89-4f61-ace8-5c2d669c79a9.png">
 
-# refresh TOken API
+# refresh Token API
 <img width="951" alt="refreshToken" src="https://user-images.githubusercontent.com/62823252/226517160-44f47368-1e99-44f9-ac1d-ba0897a2562f.png">
 
 # register API (If the email is already present in the database)
