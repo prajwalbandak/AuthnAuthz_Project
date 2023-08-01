@@ -10,8 +10,7 @@ module.exports = {
     register :  async(req,res,next) => {
         console.log(req.body);
         try {
-            //const {email, password } = req.body
-            //if(!email || !password) throw createError.BadRequest();
+           
     
             const result = await authSchema.validateAsync(req.body);
             const doesUserExit= await User.findOne({email:result.email})
